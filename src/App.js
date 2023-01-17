@@ -7,7 +7,7 @@ function App() {
   const showEmployees = true
   
   return (
-    <div className="App bg-red-300">
+    <div className="App">
       {showEmployees ?
       <>
       <input
@@ -17,10 +17,18 @@ function App() {
           setRole(e.target.value)
         }} 
       />
+      <div className="flex flex-wrap justify-center">
        <Employee name="Caleb" role="intern"/>
        <Employee name="Jacob" />
        <Employee name="Mark" role={role}/>
        <Employee name="Samantha" role="Admin"/>
+       <Employee name="Jacob" />
+       <Employee name="Mark" role={role}/>
+       <Employee name="Samantha" role="Admin"/>
+       <Employee name="Jacob" />
+       <Employee name="Mark" role={role}/>
+       <Employee name="Samantha" role="Admin"/>
+       </div>
        </>
        : <p>
         You can not see the employees
