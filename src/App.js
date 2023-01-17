@@ -68,7 +68,7 @@ function App() {
     <div className="App">
       {showEmployees ?
       <>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center m-12">
         {employees.map((employee) => {
             console.log(employee)
           return ( 
